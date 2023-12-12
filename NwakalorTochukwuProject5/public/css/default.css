@@ -1,0 +1,433 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Mono+One&display=swap');
+
+/* Resetting default styles for body */
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the header */
+header {
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Styling navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    text-align: center;
+    padding-right: 30pt;
+}
+
+/* Hover effect for links */
+a:hover {
+    color: grey;
+}
+
+/* Main content padding */
+.main {
+    padding: 20px;
+}
+
+/* Styling for description section */
+#description {
+    padding: 40pt;
+    padding-top: 10pt;
+}
+
+/* Styling for headings */
+h2 {
+    padding-left: 40pt;
+    padding-top: 70pt;
+    text-align: left;
+}
+
+/* Styling for gaming and technology links */
+#gaming a,
+#technology a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #111111;
+}
+
+/* Hover effect for gaming and technology links */
+#gaming a:hover,
+#technology a:hover {
+    color: darkgrey;
+}
+
+/* Styling for events content */
+.events-content {
+    padding: 40pt;
+    padding-top: 10pt;
+}
+
+/* Styling for the footer */
+footer {
+    text-align: end;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+}
+
+/* Styling for forms */
+form {
+    margin: 0 auto;
+    padding: 40pt;
+    padding-top: 50pt;
+    padding-left: 0pt;
+    padding-right: 70pt;
+    max-width: 900px;
+    min-width: 900px;
+}
+
+/* Styling for form inputs */
+input {
+    width: 100%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    min-height: 15px;
+}
+
+/* Hover effect for form buttons */
+#Submit:hover,
+#Reset:hover {
+    color: gray;
+}
+
+/* Styling for the welcome section */
+.welcome-section {
+    background-color: #f8f8f8; /* Choose your desired background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    color: #333; /* Choose your desired text color */
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    color: #666; /* Choose your desired text color */
+    font-size: 1.2em; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+/* Styling for the About section */
+.about {
+    background-color: #f8f8f8; /* Choose your desired background color */
+    padding: 40px;
+    text-align: center;
+}
+
+.about h1 {
+    color: #333; /* Choose your desired heading text color */
+    font-size: 2.5em; /* Adjust the heading font size as needed */
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #666; /* Choose your desired paragraph text color */
+    font-size: 1.2em; /* Adjust the paragraph font size as needed */
+    line-height: 1.6; /* Adjust the line height for better readability */
+    margin-bottom: 15px;
+}
+
+/* Styling for the Contact section */
+.contact {
+    background-color: #f8f8f8; /* Choose your desired background color */
+    padding: 40px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #333; /* Choose your desired heading text color */
+    font-size: 2.5em; /* Adjust the heading font size as needed */
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #666; /* Choose your desired paragraph text color */
+    font-size: 1.2em; /* Adjust the paragraph font size as needed */
+    line-height: 1.6; /* Adjust the line height for better readability */
+    margin-bottom: 15px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Styling for the Events section */
+.events {
+    background-color: #f8f8f8; /* Choose your desired background color */
+    padding: 40px;
+    text-align: center;
+}
+
+.events h1 {
+    color: #333; /* Choose your desired heading text color */
+    font-size: 2.5em; /* Adjust the heading font size as needed */
+    margin-bottom: 20px;
+}
+
+.events h2 {
+    color: #666; /* Choose your desired text color */
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin-top: 20px;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-item {
+    background-color: #fff; /* Choose your desired background color for event items */
+    border: 1px solid #ccc; /* Add a border for separation */
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+}
+
+.event-item h3 {
+    color: #333; /* Choose your desired heading text color for event titles */
+    font-size: 1.8em; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    color: #666; /* Choose your desired text color for event details */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+/* Styling for the Event Form */
+.event-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.event-form input[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.event-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the Profile Page */
+.profile-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2 {
+    color: #333; /* Choose your desired heading text color */
+    font-size: 2.5em; /* Adjust the heading font size as needed */
+    margin-bottom: 20px;
+}
+
+.profile-section p {
+    color: #666; /* Choose your desired text color */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list li {
+    margin-bottom: 10px;
+}
+
+.event-list a {
+    color: #007bff; /* Choose your link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-list a:hover {
+    color: #0056b3; 
+}
+
+/* Styling for the Event Details Page */
+.event-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-details h2 {
+    color: #333; /* Choose your desired heading text color */
+    font-size: 2.5em; /* Adjust the heading font size as needed */
+    margin-bottom: 20px;
+}
+
+.event-details img.event-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.event-details small {
+    color: #666; /* Choose your desired text color */
+    font-size: 1em; /* Adjust the font size as needed */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.event-details .event-description {
+    color: #444; /* Choose your description text color */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+
+
+.event-actions button {
+    background-color: #007bff; /* Choose your button background color */
+    color: white; /* Choose your button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.event-actions {
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: flex-start; /* Align buttons to the start of the column */
+}
+
+
+.event-actions button:hover {
+    background-color: #0056b3; /* Choose your button hover color */
+}
+
+
+/* Styling for the Error Page */
+.error-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.error-container h3 {
+    color: #d9534f; /* Choose your error heading color */
+    font-size: 2em; /* Adjust the heading font size as needed */
+    margin-bottom: 20px;
+}
+
+.error-container p {
+    color: #333; /* Choose your text color */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.user-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.user-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.user-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.user-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+

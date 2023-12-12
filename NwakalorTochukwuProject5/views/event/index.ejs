@@ -1,0 +1,32 @@
+<%- include('../partials/header.ejs')%>
+  
+  
+<main>
+  <section class="events">
+
+    <h1>Events</h1>
+            <% 
+            const categories = ['Gaming', 'Technology', 'Sports', 'Other'];
+
+                categories.forEach(category => { %>
+                        <h2><%= category %></h2>
+                        <ul>
+                            <% if(events.length) { %>
+                                <% events.forEach(event => { %>
+                                    <% if(event.category === category) { %>
+                                        <li><a href="/events/<%= event.id %>"><p><%= event.title %></p></a></li>
+                                    <% } %>
+                                <% }); %>
+                            <% } else { %>
+                                <p>There are no events to display.</p>
+                            <% } %>
+                        </ul>
+                <% });
+            %>
+  </section>
+</main>
+
+
+  <%- include('../partials/footer.ejs')%>
+
+ 

@@ -1,0 +1,24 @@
+<%- include('../partials/header.ejs')%>
+<main>
+    <div id="profile" class="profile-section">
+        <h2>Welcome, <%= user.firstName %></h2>
+
+        <% if(events.length) { %>
+            <p>Your created events:</p>
+            <ul class="event-list">
+                <% events.forEach(event => { %>
+                    <li><a href='/events/<%= event.id %>'><%= event.title %></a></li>
+                    <form class="event-actions">
+                        <button type="submit" formmethod="GET" formaction="/events/<%= event.id %>/edit">Edit</button>
+                        <button type="submit" formmethod="POST" formaction="/events/<%= event.id %>?_method=DELETE">Delete</button>
+                    </form>
+                <% });
+                } else { %>
+                    <p>You haven't created any events yet.</p>
+                <% } %>
+            </ul>
+    </div>
+</main>
+
+    
+    <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,29 @@
+<%- include('../partials/header.ejs')%>
+  
+  
+<main>
+    <div class="event-details">
+        <h2><%= event.title %></h2>
+        <img src="<%= event.eventImage %>" alt="Event Image" class="event-image">
+
+        <p>RSVP?: 
+        <form action="/events/id/rsvp" method="POST">
+            <button type="submit" name="status" value="YES">YES</button>
+            <button type="submit" name="status" value="NO">NO</button>
+            <button type="submit" name="status" value="MAYBE">MAYBE</button>
+        </form>
+        </p>
+        
+        <small>Posted <%= event.createdAt.toLocaleString() %> by <%= event.host.firstName + ' ' + event.host.lastName %></small>
+        <div id="details" class="event-d"><%= event.details %></div>
+        <p><strong>Location:</strong> <%= event.location%></p>
+        <p><strong>Start Date and Time:</strong> <%= event.startDateTime%></p>
+        <p><strong>End Date and Time:</strong> <%= event.endDateTime%></p>
+        <p><strong>Number of rsvps:</strong> </p>
+
+
+       
+    </div>
+</main>
+
+  <%- include('../partials/footer.ejs')%>
